@@ -7,6 +7,8 @@ exports.up = function(knex) {
   		.notNullable()
   	tbl.text('model', 128)
   		.notNullable()
+    tbl.decimal('year', 4)
+      .notNullable()
   	tbl.decimal('MSRP')
   		.notNullable()
   })
